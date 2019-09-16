@@ -101,13 +101,16 @@ Each entry is either:
 
 (defun scala-lsp/post-init-flycheck ()
     (use-package flycheck
+      :defer t
       :init (global-flycheck-mode)))
 
-(defun scala-lsp/init-lsp-ui ()
-    (use-package lsp-ui))
+(defun scala-lsp/post-init-lsp-ui ()
+    (use-package lsp-ui
+      :defer t))
 
-;(defun scala-lsp/init-company-lsp ()
-;    (use-package company-lsp))
+(defun scala-lsp/post-init-company-lsp ()
+    (use-package company-lsp
+      :defer t))
 
 (defun scala-lsp/post-init-ggtags ()
   (add-hook 'scala-mode-local-vars-hook #'spacemacs/ggtags-mode-enable))
