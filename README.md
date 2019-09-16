@@ -1,9 +1,9 @@
-# scala-lsp layer
+# scala-lsp
 
 ### Description
 
-This layer adds support for scala using [metals](https://scalameta.org/metals/),
-following the
+This [Spacemacs](http://spacemacs.org/) layer adds support for scala using
+[metals](https://scalameta.org/metals/), following the
 [official configuration advice](https://scalameta.org/metals/docs/editors/emacs.html).
 
 ### Install
