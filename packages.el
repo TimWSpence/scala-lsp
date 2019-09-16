@@ -94,7 +94,10 @@ Each entry is either:
     (use-package lsp-mode
       ;; Optional - enable lsp-mode automatically in scala files
       :hook (scala-mode . lsp)
-      :config (setq lsp-prefer-flymake nil)))
+      :config
+        (progn
+	  (setq lsp-prefer-flymake nil)
+          (add-to-list 'spacemacs-jump-handlers-scala-mode 'lsp-find-definition))))
 
 (defun scala-lsp/post-init-flycheck ()
     (use-package flycheck
