@@ -9,8 +9,9 @@ This [Spacemacs](http://spacemacs.org/) layer adds support for scala using
 ### Install
 
 First you need to clone this repository to `~/.emacs.d/private`:
+
 `git clone git@github.com:TimWSpence/scala-lsp.git $HOME/.emacs.d/private/scala-lsp`
 
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =scala-lsp= to the existing =dotspacemacs-configuration-layers= list in this
+To use this configuration layer, add it to your `~/.spacemacs` You will need to
+add `scala-lsp` to the existing `dotspacemacs-configuration-layers` list in this
 file.
